@@ -1,4 +1,4 @@
-﻿~<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" class="govuk-template ">
 
 <head>
@@ -92,7 +92,7 @@
             </div>
 
             <div class="govuk-form-group">
-                <label class="govuk-label" for="sort">
+                <label class="govuk-heading-m for="sort">
                     Portfolio
                 </label>
                 <select class="govuk-select" id="sort" name="sort">
@@ -108,7 +108,7 @@
             </div>
 
             <div class="govuk-form-group">
-                <label class="govuk-label" for="national-insurance-number">
+                <label class="govuk-heading-m for="national-insurance-number">
                     Project ID
                 </label>
                 <span id="figures-number-hint" class="govuk-hint">
@@ -118,7 +118,7 @@
             </div>
 
             <div class="govuk-form-group">
-                <label class="govuk-label" for="national-insurance-number">
+                <label class="govuk-heading-m for="national-insurance-number">
                     Project Name
                 </label>
                 <span id="figures-number-hint" class="govuk-hint">
@@ -128,7 +128,31 @@
             </div>
 
             <div class="govuk-form-group">
-                <label class="govuk-label" for="more-detail">
+                <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                    <h1 class="govuk-fieldset__heading">
+                      Methodology
+                    </h1>
+                  </legend>
+                <div class="govuk-checkboxes">
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+                      <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+                        Agile
+                      </label> 
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                      <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                        Waterfall
+                      </label> 
+                    </div>
+                </div>  
+                </fieldset>
+            </div>
+
+            <div class="govuk-form-group">
+                <label class="govuk-heading-m for="more-detail">
                     Project objective
                 </label>
                 <span id="more-detail-hint" class="govuk-hint">
@@ -137,53 +161,13 @@
                 <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
             </div>
 
-            <div class="govuk-form-group">
-                <label class="govuk-label" for="sort">
-                    Current stage
-                </label>
-                <select class="govuk-select" id="sort" name="sort">
-                    <option value="selected" selected>choose one</option>
-                    <option value="collection">Discovery</option>
-                    <option value="exchange">Private Beta</option>
-                    <option value="hub">Public Beta</option>
-                    <option value="post">Alpha</option>
-                </select>
-            </div>
 
-            <label class="govuk-label" for="more-detail">
-                Expected phase end date
-            </label>
-            <v class="govuk-date-input" id="dob">
-                <div class="govuk-date-input__item">
-                    <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="dob-day">
-                            Day
-                        </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-day" name="dob-day" type="number" pattern="[0-9]*">
-                    </div>
-                </div>
-                <div class="govuk-date-input__item">
-                    <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="dob-month">
-                            Month
-                        </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-month" name="dob-month" type="number" pattern="[0-9]*">
-                    </div>
-                </div>
-                <div class="govuk-date-input__item">
-                    <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="dob-year">
-                            Year
-                        </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="dob-year" name="dob-year" type="number" pattern="[0-9]*">
-                    </div>
-                </div>
                 <div class="govuk-form-group">
                     <fieldset class="govuk-fieldset" aria-describedby="dob-hint" role="group">
                         <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
                         </legend>
 
-                        <label class="govuk-label" for="more-detail">
+                        <label class="govuk-heading-m for="more-detail">
                             Go-Live baseline date
                         </label>
                         <div class="govuk-date-input" id="dob">
@@ -217,7 +201,7 @@
 
 
                     <div class="govuk-form-group">
-                        <label class="govuk-label" for="sort">
+                        <label class="govuk-heading-m for="sort">
                             Delivery Manager
                         </label>
                         <select class="govuk-select" id="sort" name="sort">
@@ -236,7 +220,7 @@
                     </div>
 
                     <div class="govuk-form-group">
-                        <label class="govuk-label" for="sort">
+                        <label class="govuk-heading-m for="sort">
                             SRO
                         </label>
                         <select class="govuk-select" id="sort" name="sort">
@@ -245,7 +229,18 @@
                             <option value="pm2">Swift, Nathan </option>
                         </select>
                     </div>
-
+              
+                        <div class="govuk-form-group">
+                            <label class="govuk-heading-m" for="sort">
+                                PSO
+                            </label>
+                            <select class="govuk-select" id="sort" name="sort">
+                                <option value="selected" selected>choose one</option>
+                                <option value="ps1">Option 1 </option>
+                                <option value="ps2">Option 2 </option>
+                            </select>
+                        </div>
+                       
                     <style>
 
                         .govuk-table__header2 {
